@@ -1,556 +1,669 @@
-﻿[2016.10.23-13.26.10:041][  0]Log file open, 10/23/16 22:26:10
-[2016.10.23-13.26.10:041][  0]LogInit:Display: Running engine for game: proj
-[2016.10.23-13.26.10:041][  0]LogPlatformFile: Not using cached read wrapper
-[2016.10.23-13.26.10:041][  0]LogInit:Display: RandInit(175332856) SRandInit(175332857).
-[2016.10.23-13.26.10:041][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.10.23-13.26.10:041][  0]LogStats: Stats thread started at 0.066712
-[2016.10.23-13.26.10:041][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.10.23-13.26.10:041][  0]LogInit: API Version: 2758231
-[2016.10.23-13.26.10:041][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.10.23-13.26.10:041][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.10.23-13.26.10:041][  0]LogInit: Build Configuration: Development
-[2016.10.23-13.26.10:041][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.10.23-13.26.10:041][  0]LogInit: Command line: -EpicPortal 
-[2016.10.23-13.26.10:041][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.10.23-13.26.10:041][  0]LogInit: Rocket: 1
-[2016.10.23-13.26.10:044][  0]LogInit: Using libcurl 7.41.0
-[2016.10.23-13.26.10:044][  0]LogInit:  - built for x86_64-pc-win32
-[2016.10.23-13.26.10:044][  0]LogInit:  - supports SSL with WinSSL
-[2016.10.23-13.26.10:044][  0]LogInit:  - other features:
-[2016.10.23-13.26.10:044][  0]LogInit:      CURL_VERSION_SSL
-[2016.10.23-13.26.10:044][  0]LogInit:      CURL_VERSION_IPV6
-[2016.10.23-13.26.10:044][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.10.23-13.26.10:044][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.10.23-13.26.10:044][  0]LogInit:      CURL_VERSION_IDN
-[2016.10.23-13.26.10:044][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.10.23-13.26.10:044][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.10.23-13.26.10:044][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.10.23-13.26.10:044][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.10.23-13.26.10:044][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.10.23-13.26.10:048][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.10.23-13.26.10:052][  0]LogInit: Object subsystem initialized
-[2016.10.23-13.26.10:058][  0]LogInit: Selected Device Profile: [Windows]
-[2016.10.23-13.26.10:058][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.10.23-13.26.10:065][  0]LogInit: Computer: MYUMOON-PC
-[2016.10.23-13.26.10:065][  0]LogInit: User: myumoon
-[2016.10.23-13.26.10:065][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.10.23-13.26.10:065][  0]LogInit: High frequency timer resolution =3.914066 MHz
-[2016.10.23-13.26.10:065][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2016.10.23-13.26.10:065][  0]LogMemory: Platform Memory Stats for Windows
-[2016.10.23-13.26.10:065][  0]LogMemory: Process Physical Memory: 56.73 MB used, 56.73 MB peak
-[2016.10.23-13.26.10:065][  0]LogMemory: Process Virtual Memory: 56.92 MB used, 56.92 MB peak
-[2016.10.23-13.26.10:065][  0]LogMemory: Physical Memory: 6180.46 MB used, 16326.44 MB total
-[2016.10.23-13.26.10:065][  0]LogMemory: Virtual Memory: 385.05 MB used, 134217728.00 MB total
-[2016.10.23-13.26.10:429][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 980 Ti (Feature Level 11_0)
-[2016.10.23-13.26.10:429][  0]LogD3D11RHI: Adapter has 6102MB of dedicated video memory, 0MB of dedicated system memory, and 8163MB of shared system memory, 2 output[s]
-[2016.10.23-13.26.10:430][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.10.23-13.26.10:430][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8163MB of shared system memory, 0 output[s]
-[2016.10.23-13.26.10:430][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.10.23-13.26.10:433][  0]LogD3D11RHI: !Direct3DDevice
-[2016.10.23-13.26.10:433][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.10.23-13.26.10:444][  0]LogD3D11RHI: Async texture creation enabled
-[2016.10.23-13.26.10:458][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (D:/prog/0_myprogram/nekoroom/proj/Intermediate/Shaders/WorkingDirectory/8900/).
-[2016.10.23-13.26.10:459][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/myumoon/AppData/Local/Temp/UnrealShaderWorkingDir/9ED84F5446A35F7E09149681C9523E95/'.
-[2016.10.23-13.26.10:459][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.10.23-13.26.10:993][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.10.23-13.26.10:995][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.10.23-13.26.10:998][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.10.23-13.26.11:000][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.10.23-13.26.11:003][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.10.23-13.26.11:005][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.10.23-13.26.11:006][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.10.23-13.26.11:008][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.10.23-13.26.11:010][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.10.23-13.26.11:011][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.10.23-13.26.11:013][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.10.23-13.26.11:017][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.10.23-13.26.11:017][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.10.23-13.26.11:018][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.10.23-13.26.11:032][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.10.23-13.26.11:034][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.10.23-13.26.11:036][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.10.23-13.26.11:038][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.10.23-13.26.11:038][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.10.23-13.26.11:081][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.10.23-13.26.11:110][  0]LogDerivedDataCache: Loaded boot cache 0.03s 41MB C:/Users/myumoon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.10.23-13.26.11:110][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/myumoon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.10.23-13.26.11:110][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/prog/0_myprogram/nekoroom/proj/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.10.23-13.26.11:110][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.10.23-13.26.11:110][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/prog/0_myprogram/nekoroom/proj/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.10.23-13.26.11:110][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.10.23-13.26.11:152][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.10.23-13.26.11:164][  0]LogDerivedDataCache: Using Local data cache path C:/Users/myumoon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.10.23-13.26.11:296][  0]LogInit: Selected Device Profile: [Windows]
-[2016.10.23-13.26.11:297][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.10.23-13.26.11:368][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.10.23-13.26.11:368][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.10.23-13.26.11:515][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.10.23-13.26.12:074][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.10.23-13.26.12:202][  0]LogAssetRegistry: FAssetRegistry took 0.0109 seconds to start up
-[2016.10.23-13.26.12:302][  0]SourceControl: Info Source control is disabled
-[2016.10.23-13.26.12:353][  0]SourceControl: Info Source control is disabled
-[2016.10.23-13.26.12:359][  0]SourceControl: Info Source control is disabled
-[2016.10.23-13.26.12:364][  0]SourceControl: Info Source control is disabled
-[2016.10.23-13.26.12:498][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.10.23-13.26.12:498][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
-[2016.10.23-13.26.12:541][  0]LogEngine: Initializing Engine...
-[2016.10.23-13.26.12:544][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.10.23-13.26.12:544][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.10.23-13.26.12:625][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.10.23-13.26.12:629][  0]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.23-13.26.12:638][  0]LogInit: FAudioDevice initialized.
-[2016.10.23-13.26.12:654][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/myumoon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.10.23-13.26.12:657][  0]LogInit: Texture streaming: Enabled
-[2016.10.23-13.26.12:660][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.10.23-13.26.12:660][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.10.23-13.26.12:660][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 2033b801412bafb1e5c199a06174dacb|f32138237ccd42f08182127283bf0fc9|400f1917-6872-45c5-a40f-81aaa2916a5d
-[2016.10.23-13.26.12:660][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.10.23-13.26.12:668][  0]LogInit: Transaction tracking system initialized
-[2016.10.23-13.26.12:682][  0]BlueprintLog: New page: Editor Load
-[2016.10.23-13.26.12:889][  0]LocalizationService: Info Localization service is disabled
-[2016.10.23-13.26.12:980][  0]LogConsoleResponse:Display: 
-[2016.10.23-13.26.13:052][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.10.23-13.26.13:088][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Content/' took 0.01s
-[2016.10.23-13.26.13:088][  0]SourceControl: Info Source control is disabled
-[2016.10.23-13.26.13:092][  0]LogFactory: FactoryCreateBinary: PackFactory with PackFactory (0 0 C:/Program Files (x86)/Epic Games/4.10/FeaturePacks/StarterContent.upack)
-[2016.10.23-13.26.13:097][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
-[2016.10.23-13.26.13:101][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Floor_400x400.uasset"
-[2016.10.23-13.26.13:106][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Pillar_50x500.uasset"
-[2016.10.23-13.26.13:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
-[2016.10.23-13.26.13:115][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_400x200.uasset"
-[2016.10.23-13.26.13:120][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_400x300.uasset"
-[2016.10.23-13.26.13:125][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_400x400.uasset"
-[2016.10.23-13.26.13:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_500x500.uasset"
-[2016.10.23-13.26.13:134][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
-[2016.10.23-13.26.13:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
-[2016.10.23-13.26.13:156][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
-[2016.10.23-13.26.13:160][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
-[2016.10.23-13.26.13:165][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Collapse01.uasset"
-[2016.10.23-13.26.13:169][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Collapse02.uasset"
-[2016.10.23-13.26.13:172][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Collapse_Cue.uasset"
-[2016.10.23-13.26.13:177][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Explosion01.uasset"
-[2016.10.23-13.26.13:182][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Explosion02.uasset"
-[2016.10.23-13.26.13:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Explosion_Cue.uasset"
-[2016.10.23-13.26.13:189][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Fire01.uasset"
-[2016.10.23-13.26.13:191][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Fire01_Cue.uasset"
-[2016.10.23-13.26.13:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Fire_Sparks01.uasset"
-[2016.10.23-13.26.13:209][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
-[2016.10.23-13.26.13:215][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Light01.uasset"
-[2016.10.23-13.26.13:217][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Light01_Cue.uasset"
-[2016.10.23-13.26.13:223][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Light02.uasset"
-[2016.10.23-13.26.13:225][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Light02_Cue.uasset"
-[2016.10.23-13.26.13:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Smoke01.uasset"
-[2016.10.23-13.26.13:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Smoke01_Cue.uasset"
-[2016.10.23-13.26.13:237][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
-[2016.10.23-13.26.13:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Starter_Birds01.uasset"
-[2016.10.23-13.26.13:271][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Starter_Music01.uasset"
-[2016.10.23-13.26.13:273][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
-[2016.10.23-13.26.13:283][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Starter_Wind05.uasset"
-[2016.10.23-13.26.13:293][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Starter_Wind06.uasset"
-[2016.10.23-13.26.13:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Steam01.uasset"
-[2016.10.23-13.26.13:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Audio/Steam01_Cue.uasset"
-[2016.10.23-13.26.13:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
-[2016.10.23-13.26.13:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
-[2016.10.23-13.26.13:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
-[2016.10.23-13.26.13:320][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
-[2016.10.23-13.26.13:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
-[2016.10.23-13.26.13:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
-[2016.10.23-13.26.13:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
-[2016.10.23-13.26.13:338][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
-[2016.10.23-13.26.13:340][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
-[2016.10.23-13.26.13:344][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
-[2016.10.23-13.26.13:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
-[2016.10.23-13.26.13:354][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
-[2016.10.23-13.26.13:358][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
-[2016.10.23-13.26.13:363][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
-[2016.10.23-13.26.13:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
-[2016.10.23-13.26.13:371][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
-[2016.10.23-13.26.13:666][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
-[2016.10.23-13.26.13:671][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Maps/Advanced_Lighting.umap"
-[2016.10.23-13.26.13:680][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Maps/Minimal_Default.umap"
-[2016.10.23-13.26.13:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Maps/StarterMap.umap"
-[2016.10.23-13.26.13:758][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_AssetPlatform.uasset"
-[2016.10.23-13.26.13:762][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Basic_Floor.uasset"
-[2016.10.23-13.26.13:791][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Basic_Wall.uasset"
-[2016.10.23-13.26.13:796][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
-[2016.10.23-13.26.13:800][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
-[2016.10.23-13.26.13:805][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
-[2016.10.23-13.26.13:812][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
-[2016.10.23-13.26.13:816][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
-[2016.10.23-13.26.13:820][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
-[2016.10.23-13.26.13:825][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
-[2016.10.23-13.26.13:829][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
-[2016.10.23-13.26.13:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
-[2016.10.23-13.26.13:838][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
-[2016.10.23-13.26.13:842][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
-[2016.10.23-13.26.13:848][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
-[2016.10.23-13.26.13:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
-[2016.10.23-13.26.13:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
-[2016.10.23-13.26.13:861][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Glass.uasset"
-[2016.10.23-13.26.13:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Ground_Grass.uasset"
-[2016.10.23-13.26.13:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
-[2016.10.23-13.26.13:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Ground_Moss.uasset"
-[2016.10.23-13.26.13:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
-[2016.10.23-13.26.13:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
-[2016.10.23-13.26.13:886][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
-[2016.10.23-13.26.13:891][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Copper.uasset"
-[2016.10.23-13.26.13:895][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Gold.uasset"
-[2016.10.23-13.26.13:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Rust.uasset"
-[2016.10.23-13.26.13:904][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Metal_Steel.uasset"
-[2016.10.23-13.26.13:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
-[2016.10.23-13.26.13:912][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
-[2016.10.23-13.26.13:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
-[2016.10.23-13.26.13:921][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Rock_Slate.uasset"
-[2016.10.23-13.26.13:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
-[2016.10.23-13.26.13:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
-[2016.10.23-13.26.13:935][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
-[2016.10.23-13.26.13:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Tech_Panel.uasset"
-[2016.10.23-13.26.13:943][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Water_Lake.uasset"
-[2016.10.23-13.26.13:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Water_Ocean.uasset"
-[2016.10.23-13.26.13:952][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
-[2016.10.23-13.26.13:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
-[2016.10.23-13.26.13:960][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Wood_Oak.uasset"
-[2016.10.23-13.26.13:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Wood_Pine.uasset"
-[2016.10.23-13.26.13:969][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
-[2016.10.23-13.26.13:973][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
-[2016.10.23-13.26.13:978][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/P_Explosion.uasset"
-[2016.10.23-13.26.13:983][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/P_Fire.uasset"
-[2016.10.23-13.26.13:988][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/P_Smoke.uasset"
-[2016.10.23-13.26.13:992][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/P_Sparks.uasset"
-[2016.10.23-13.26.13:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/P_Steam_Lit.uasset"
-[2016.10.23-13.26.14:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_Burst.uasset"
-[2016.10.23-13.26.14:005][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
-[2016.10.23-13.26.14:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
-[2016.10.23-13.26.14:016][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
-[2016.10.23-13.26.14:021][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
-[2016.10.23-13.26.14:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
-[2016.10.23-13.26.14:029][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
-[2016.10.23-13.26.14:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
-[2016.10.23-13.26.14:038][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
-[2016.10.23-13.26.14:042][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Particles/Materials/M_Spark.uasset"
-[2016.10.23-13.26.14:047][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/MaterialSphere.uasset"
-[2016.10.23-13.26.14:052][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Bush.uasset"
-[2016.10.23-13.26.14:057][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Chair.uasset"
-[2016.10.23-13.26.14:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_CornerFrame.uasset"
-[2016.10.23-13.26.14:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Couch.uasset"
-[2016.10.23-13.26.14:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Door.uasset"
-[2016.10.23-13.26.14:075][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_DoorFrame.uasset"
-[2016.10.23-13.26.14:080][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_GlassWindow.uasset"
-[2016.10.23-13.26.14:085][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
-[2016.10.23-13.26.14:089][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
-[2016.10.23-13.26.14:099][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
-[2016.10.23-13.26.14:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_PillarFrame.uasset"
-[2016.10.23-13.26.14:108][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_PillarFrame300.uasset"
-[2016.10.23-13.26.14:114][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Rock.uasset"
-[2016.10.23-13.26.14:118][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Shelf.uasset"
-[2016.10.23-13.26.14:123][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Stairs.uasset"
-[2016.10.23-13.26.14:128][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_Statue.uasset"
-[2016.10.23-13.26.14:133][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_TableRound.uasset"
-[2016.10.23-13.26.14:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/SM_WindowFrame.uasset"
-[2016.10.23-13.26.14:142][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Bush.uasset"
-[2016.10.23-13.26.14:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Chair.uasset"
-[2016.10.23-13.26.14:151][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Door.uasset"
-[2016.10.23-13.26.14:155][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Frame.uasset"
-[2016.10.23-13.26.14:159][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Lamp.uasset"
-[2016.10.23-13.26.14:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
-[2016.10.23-13.26.14:169][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
-[2016.10.23-13.26.14:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Rock.uasset"
-[2016.10.23-13.26.14:178][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Shelf.uasset"
-[2016.10.23-13.26.14:183][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_Statue.uasset"
-[2016.10.23-13.26.14:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
-[2016.10.23-13.26.14:196][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Props/Materials/M_TableRound.uasset"
-[2016.10.23-13.26.14:201][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Cone.uasset"
-[2016.10.23-13.26.14:206][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Cube.uasset"
-[2016.10.23-13.26.14:212][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
-[2016.10.23-13.26.14:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
-[2016.10.23-13.26.14:223][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Pipe.uasset"
-[2016.10.23-13.26.14:227][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
-[2016.10.23-13.26.14:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
-[2016.10.23-13.26.14:236][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Plane.uasset"
-[2016.10.23-13.26.14:240][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
-[2016.10.23-13.26.14:246][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Sphere.uasset"
-[2016.10.23-13.26.14:251][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Torus.uasset"
-[2016.10.23-13.26.14:256][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Trim.uasset"
-[2016.10.23-13.26.14:260][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
-[2016.10.23-13.26.14:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
-[2016.10.23-13.26.14:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
-[2016.10.23-13.26.14:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Tube.uasset"
-[2016.10.23-13.26.14:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
-[2016.10.23-13.26.14:284][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
-[2016.10.23-13.26.14:288][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
-[2016.10.23-13.26.14:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
-[2016.10.23-13.26.14:334][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
-[2016.10.23-13.26.14:356][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
-[2016.10.23-13.26.14:375][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
-[2016.10.23-13.26.14:402][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
-[2016.10.23-13.26.14:426][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
-[2016.10.23-13.26.14:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
-[2016.10.23-13.26.14:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
-[2016.10.23-13.26.14:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
-[2016.10.23-13.26.14:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
-[2016.10.23-13.26.14:586][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
-[2016.10.23-13.26.14:609][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
-[2016.10.23-13.26.14:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
-[2016.10.23-13.26.14:643][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Burst_M.uasset"
-[2016.10.23-13.26.14:651][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Bush_D.uasset"
-[2016.10.23-13.26.14:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Bush_N.uasset"
-[2016.10.23-13.26.14:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
-[2016.10.23-13.26.14:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
-[2016.10.23-13.26.14:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Chair_M.uasset"
-[2016.10.23-13.26.14:685][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Chair_N.uasset"
-[2016.10.23-13.26.14:690][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
-[2016.10.23-13.26.14:723][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
-[2016.10.23-13.26.14:731][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
-[2016.10.23-13.26.14:764][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
-[2016.10.23-13.26.14:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
-[2016.10.23-13.26.14:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
-[2016.10.23-13.26.14:808][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
-[2016.10.23-13.26.14:827][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
-[2016.10.23-13.26.14:853][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
-[2016.10.23-13.26.14:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
-[2016.10.23-13.26.14:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
-[2016.10.23-13.26.14:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
-[2016.10.23-13.26.14:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
-[2016.10.23-13.26.14:985][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
-[2016.10.23-13.26.15:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
-[2016.10.23-13.26.15:020][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
-[2016.10.23-13.26.15:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
-[2016.10.23-13.26.15:051][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
-[2016.10.23-13.26.15:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
-[2016.10.23-13.26.15:075][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Door_M.uasset"
-[2016.10.23-13.26.15:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Door_N.uasset"
-[2016.10.23-13.26.15:095][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
-[2016.10.23-13.26.15:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
-[2016.10.23-13.26.15:118][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
-[2016.10.23-13.26.15:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
-[2016.10.23-13.26.15:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Frame_M.uasset"
-[2016.10.23-13.26.15:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Frame_N.uasset"
-[2016.10.23-13.26.15:149][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Gradinet_01.uasset"
-[2016.10.23-13.26.15:188][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
-[2016.10.23-13.26.15:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
-[2016.10.23-13.26.15:249][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
-[2016.10.23-13.26.15:271][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
-[2016.10.23-13.26.15:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
-[2016.10.23-13.26.15:330][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
-[2016.10.23-13.26.15:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Lamp_M.uasset"
-[2016.10.23-13.26.15:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Lamp_N.uasset"
-[2016.10.23-13.26.15:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_MacroVariation.uasset"
-[2016.10.23-13.26.15:403][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
-[2016.10.23-13.26.15:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
-[2016.10.23-13.26.15:455][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
-[2016.10.23-13.26.15:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
-[2016.10.23-13.26.15:492][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
-[2016.10.23-13.26.15:514][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
-[2016.10.23-13.26.15:528][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
-[2016.10.23-13.26.15:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
-[2016.10.23-13.26.15:568][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
-[2016.10.23-13.26.15:579][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_RockMesh_M.uasset"
-[2016.10.23-13.26.15:596][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_RockMesh_N.uasset"
-[2016.10.23-13.26.15:623][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
-[2016.10.23-13.26.15:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
-[2016.10.23-13.26.15:665][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
-[2016.10.23-13.26.15:692][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
-[2016.10.23-13.26.15:717][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
-[2016.10.23-13.26.15:757][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
-[2016.10.23-13.26.15:793][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
-[2016.10.23-13.26.15:829][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
-[2016.10.23-13.26.15:860][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Shelf_M.uasset"
-[2016.10.23-13.26.15:874][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Shelf_N.uasset"
-[2016.10.23-13.26.15:880][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
-[2016.10.23-13.26.15:897][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
-[2016.10.23-13.26.15:907][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
-[2016.10.23-13.26.15:918][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Spark_Core.uasset"
-[2016.10.23-13.26.15:928][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Statue_M.uasset"
-[2016.10.23-13.26.15:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Statue_N.uasset"
-[2016.10.23-13.26.15:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_TableRound_M.uasset"
-[2016.10.23-13.26.15:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_TableRound_N.uasset"
-[2016.10.23-13.26.15:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
-[2016.10.23-13.26.15:985][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
-[2016.10.23-13.26.15:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
-[2016.10.23-13.26.16:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
-[2016.10.23-13.26.16:017][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
-[2016.10.23-13.26.16:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
-[2016.10.23-13.26.16:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Water_M.uasset"
-[2016.10.23-13.26.16:051][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Water_N.uasset"
-[2016.10.23-13.26.16:068][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
-[2016.10.23-13.26.16:084][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
-[2016.10.23-13.26.16:098][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
-[2016.10.23-13.26.16:120][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
-[2016.10.23-13.26.16:149][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
-[2016.10.23-13.26.16:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
-[2016.10.23-13.26.16:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
-[2016.10.23-13.26.16:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
-[2016.10.23-13.26.16:259][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
-[2016.10.23-13.26.16:316][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
-[2016.10.23-13.26.16:345][  0]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Architecture/Floor_400x400" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Floor_400x400.uasset" SILENT=true
-[2016.10.23-13.26.16:359][  0]LogSavePackage: Save=9.183290ms
-[2016.10.23-13.26.16:359][  0]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/Floor_400x400841D797C44AA5D01B1634E9ED3E8685B.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Floor_400x400.uasset'
-[2016.10.23-13.26.16:361][  0]LogSavePackage: Total save time: 15.574344ms
-[2016.10.23-13.26.16:361][  0]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/StarterContent/Architecture/Floor_400x400.uasset
-[2016.10.23-13.26.16:361][  0]LogFeaturePack:Warning: Inserted 1 feature packs
-[2016.10.23-13.26.16:363][  0]Cmd: MAP LOAD FILE="D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.10.23-13.26.16:363][  0]LightingResults: New page: Lighting Build
-[2016.10.23-13.26.16:365][  0]MapCheck: New page: Map Check
-[2016.10.23-13.26.16:365][  0]LightingResults: New page: Lighting Build
-[2016.10.23-13.26.16:373][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F3A83B240
-[2016.10.23-13.26.16:630][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.10.23-13.26.16:636][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.10.23-13.26.16:637][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.10.23-13.26.16:666][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 29.463ms to complete.
-[2016.10.23-13.26.16:666][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.304
-[2016.10.23-13.26.16:799][  0]LogCollectionManager: Loaded 0 collections in 0.001052 seconds
-[2016.10.23-13.26.16:839][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Saved/Collections/' took 0.01s
-[2016.10.23-13.26.16:839][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Content/Developers/myumoon/Collections/' took 0.01s
-[2016.10.23-13.26.16:839][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Content/Collections/' took 0.01s
-[2016.10.23-13.26.16:839][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.10.23-13.26.16:844][  0]LogContentBrowser: Native class hierarchy populated in 0.0055 seconds. Added 1895 classes and 343 folders.
-[2016.10.23-13.26.16:848][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2016.10.23-13.26.16:875][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2016.10.23-13.26.16:934][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.10.23-13.26.16:938][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.10.23-13.26.16:960][  0]LogLoad: Full Startup: 7.22 seconds (BP compile: 0.05 seconds)
-[2016.10.23-13.26.16:986][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
-[2016.10.23-13.26.16:991][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.10.23-13.26.17:063][  0]LogContentStreaming: Texture pool size now 700 MB
-[2016.10.23-13.26.17:157][  0]LogRenderer: Reallocating scene render targets to support 804x732 (Frame:3).
-[2016.10.23-13.26.17:272][  3]LogAssetRegistry: Asset discovery search completed in 5.0814 seconds
-[2016.10.23-13.26.17:272][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.10.23-13.26.17:272][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000013 seconds (updated 0 objects)
-[2016.10.23-13.26.19:604][282]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.26.19:604][282]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.23-13.26.19:604][282]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 24, 2016, 7:26:19 AM)
-[2016.10.23-13.26.19:604][282]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.10.23-13.26.19:623][282]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018940s)
-[2016.10.23-13.26.19:624][282]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.10.23-13.26.19:624][282]LogPlayLevel: PIE: World Init took: (0.000928s)
-[2016.10.23-13.26.19:624][282]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020091s)
-[2016.10.23-13.26.19:642][282]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.23-13.26.19:648][282]LogInit: FAudioDevice initialized.
-[2016.10.23-13.26.19:699][282]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.10.23-13.26.19:702][282]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.23-22.26.19
-[2016.10.23-13.26.19:702][282]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.26.19:702][282]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.26.19:702][282]LogWorld: Bringing up level for play took: 0.002555
-[2016.10.23-13.26.19:706][282]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.024
-[2016.10.23-13.26.19:706][282]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.27.20:996][632]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.27.21:027][632]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.27.21:036][632]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F2AB04400
-[2016.10.23-13.27.22:873][852]LogEditorViewport: Clicking on Actor (LMB): DocumentationActor (DocumentationActor1)
-[2016.10.23-13.27.31:123][518]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (RightArm_StaticMesh)
-[2016.10.23-13.27.36:368][142]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Linear_Stair_StaticMesh)
-[2016.10.23-13.27.47:346][454]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.10.23-13.27.48:181][550]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
-[2016.10.23-13.28.00:337][994]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CubeMesh)
-[2016.10.23-13.29.26:818][356]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
-[2016.10.23-13.29.30:271][753]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.10.23-13.29.30:534][753]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 107 classes and 0 folders.
-[2016.10.23-13.30.02:178][143]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_0) - call TermArticulated first.
-[2016.10.23-13.30.02:267][143]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.10.23-13.31.43:109][283]Cmd: TRANSACTION UNDO
-[2016.10.23-13.31.43:109][283]LogEditorTransaction: Undo Set actor scale
-[2016.10.23-13.31.54:914][540]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.10.23-13.32.03:383][532]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.03:383][532]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.23-13.32.03:383][532]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 24, 2016, 7:32:03 AM)
-[2016.10.23-13.32.03:383][532]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.10.23-13.32.03:399][532]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015762s)
-[2016.10.23-13.32.03:400][532]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.10.23-13.32.03:400][532]LogPlayLevel: PIE: World Init took: (0.000748s)
-[2016.10.23-13.32.03:400][532]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.016661s)
-[2016.10.23-13.32.03:400][532]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.10.23-13.32.03:436][532]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.23-13.32.03:443][532]LogInit: FAudioDevice initialized.
-[2016.10.23-13.32.03:475][532]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.10.23-13.32.03:481][532]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.23-22.32.03
-[2016.10.23-13.32.03:481][532]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.32.03:481][532]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.32.03:482][532]LogWorld: Bringing up level for play took: 0.004998
-[2016.10.23-13.32.03:483][532]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.801
-[2016.10.23-13.32.03:483][532]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.17:926][260]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.17:990][260]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.18:008][260]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F85610180
-[2016.10.23-13.32.20:822][585]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.20:822][585]LogEditorTransaction: Undo Clicking on Actors
-[2016.10.23-13.32.21:987][684]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.21:987][684]LogEditorTransaction: Undo Set actor scale
-[2016.10.23-13.32.22:488][734]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.22:488][734]LogEditorTransaction: Undo Set actor scale
-[2016.10.23-13.32.22:822][766]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.22:822][766]LogEditorTransaction: Undo Set actor scale
-[2016.10.23-13.32.23:043][786]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.23:043][786]LogEditorTransaction: Undo Clicking on Actors
-[2016.10.23-13.32.23:253][799]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.23:253][799]LogEditorTransaction: Undo Clicking on Actors
-[2016.10.23-13.32.23:844][848]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.23:844][848]LogEditorTransaction: Undo Clicking on Actors
-[2016.10.23-13.32.24:548][918]Cmd: TRANSACTION UNDO
-[2016.10.23-13.32.24:548][918]LogEditorTransaction: Undo Clicking on Actors
-[2016.10.23-13.32.30:965][661]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.30:965][661]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.23-13.32.30:965][661]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 24, 2016, 7:32:30 AM)
-[2016.10.23-13.32.30:965][661]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.10.23-13.32.30:980][661]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015282s)
-[2016.10.23-13.32.30:981][661]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.10.23-13.32.30:981][661]LogPlayLevel: PIE: World Init took: (0.000750s)
-[2016.10.23-13.32.30:981][661]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.016225s)
-[2016.10.23-13.32.31:005][661]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.23-13.32.31:011][661]LogInit: FAudioDevice initialized.
-[2016.10.23-13.32.31:057][661]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.10.23-13.32.31:067][661]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.23-22.32.31
-[2016.10.23-13.32.31:067][661]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.32.31:067][661]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.32.31:068][661]LogWorld: Bringing up level for play took: 0.008090
-[2016.10.23-13.32.31:069][661]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.387
-[2016.10.23-13.32.31:070][661]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.31:878][749]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.31:953][749]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.31:972][749]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F3169E160
-[2016.10.23-13.32.34:896][ 95]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
-[2016.10.23-13.32.39:228][516]LogSavePackage: Save=244.833633ms
-[2016.10.23-13.32.39:228][516]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap8B5122134384EF4C0B192489E1AF1CA2.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
-[2016.10.23-13.32.39:230][516]LogSavePackage: Total save time: 254.670206ms
-[2016.10.23-13.32.39:230][516]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
-[2016.10.23-13.32.39:241][516]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.322
-[2016.10.23-13.32.40:025][595]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.40:025][595]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.23-13.32.40:025][595]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 24, 2016, 7:32:40 AM)
-[2016.10.23-13.32.40:025][595]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.10.23-13.32.40:041][595]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016216s)
-[2016.10.23-13.32.40:042][595]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.10.23-13.32.40:042][595]LogPlayLevel: PIE: World Init took: (0.000856s)
-[2016.10.23-13.32.40:042][595]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.017282s)
-[2016.10.23-13.32.40:091][595]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.23-13.32.40:097][595]LogInit: FAudioDevice initialized.
-[2016.10.23-13.32.40:148][595]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.10.23-13.32.40:161][595]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.23-22.32.40
-[2016.10.23-13.32.40:161][595]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.32.40:162][595]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.10.23-13.32.40:163][595]LogWorld: Bringing up level for play took: 0.011283
-[2016.10.23-13.32.40:165][595]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.517
-[2016.10.23-13.32.40:165][595]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.45:575][239]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.45:658][239]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.10.23-13.32.45:678][239]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F155F2E80
-[2016.10.23-13.32.47:559][442]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.10.23-13.32.53:048][ 87]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
-[2016.10.23-13.33.04:439][288]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.10.23-13.33.29:489][832]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.10.23-13.33.45:158][477]LogRenderer: Reallocating scene render targets to support 804x744 (Frame:115641).
-[2016.10.23-13.33.45:158][477]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.10.23-13.33.46:890][662]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.10.23-13.33.49:839][943]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
-[2016.10.23-13.42.45:182][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F9C06F1A0
-[2016.10.23-13.42.45:183][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F9BD6C540
-[2016.10.23-13.42.45:184][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F817B0FE0
-[2016.10.23-13.42.45:184][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F85749300
-[2016.10.23-13.42.45:185][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F9BE10180
-[2016.10.23-13.42.45:186][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019FA9A94220
-[2016.10.23-13.42.45:186][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019FAEAD4AE0
-[2016.10.23-13.42.45:187][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019FB37654E0
-[2016.10.23-13.42.45:188][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019FB3766700
-[2016.10.23-13.42.45:188][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019FBC9B2D40
-[2016.10.23-13.42.45:189][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019FAEAD6FC0
-[2016.10.23-13.42.45:189][310]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019F095039C0
-[2016.10.23-13.42.45:410][310]LogSavePackage: Sa
+﻿[2016.10.26-14.59.17:278][  0]Log file open, 10/26/16 23:59:17
+[2016.10.26-14.59.17:278][  0]LogInit:Display: Running engine for game: proj
+[2016.10.26-14.59.17:278][  0]LogPlatformFile: Not using cached read wrapper
+[2016.10.26-14.59.17:278][  0]LogInit:Display: RandInit(1512640242) SRandInit(1512640244).
+[2016.10.26-14.59.17:278][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.10.26-14.59.17:278][  0]LogStats: Stats thread started at 0.061562
+[2016.10.26-14.59.17:278][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.10.26-14.59.17:278][  0]LogInit: API Version: 2758231
+[2016.10.26-14.59.17:278][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.10.26-14.59.17:278][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.10.26-14.59.17:278][  0]LogInit: Build Configuration: Development
+[2016.10.26-14.59.17:278][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.10.26-14.59.17:278][  0]LogInit: Command line:  
+[2016.10.26-14.59.17:278][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.10.26-14.59.17:278][  0]LogInit: Rocket: 1
+[2016.10.26-14.59.17:282][  0]LogInit: Using libcurl 7.41.0
+[2016.10.26-14.59.17:282][  0]LogInit:  - built for x86_64-pc-win32
+[2016.10.26-14.59.17:282][  0]LogInit:  - supports SSL with WinSSL
+[2016.10.26-14.59.17:282][  0]LogInit:  - other features:
+[2016.10.26-14.59.17:282][  0]LogInit:      CURL_VERSION_SSL
+[2016.10.26-14.59.17:282][  0]LogInit:      CURL_VERSION_IPV6
+[2016.10.26-14.59.17:282][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.10.26-14.59.17:282][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.10.26-14.59.17:282][  0]LogInit:      CURL_VERSION_IDN
+[2016.10.26-14.59.17:282][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.10.26-14.59.17:282][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.10.26-14.59.17:282][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.10.26-14.59.17:282][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.10.26-14.59.17:282][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.10.26-14.59.17:285][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.10.26-14.59.17:290][  0]LogInit: Object subsystem initialized
+[2016.10.26-14.59.17:291][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.26-14.59.17:291][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.26-14.59.17:297][  0]LogInit: Computer: MYUMOON-PC
+[2016.10.26-14.59.17:297][  0]LogInit: User: myumoon
+[2016.10.26-14.59.17:297][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.10.26-14.59.17:297][  0]LogInit: High frequency timer resolution =3.914066 MHz
+[2016.10.26-14.59.17:297][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.10.26-14.59.17:297][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.26-14.59.17:297][  0]LogMemory: Process Physical Memory: 56.61 MB used, 56.61 MB peak
+[2016.10.26-14.59.17:297][  0]LogMemory: Process Virtual Memory: 58.79 MB used, 58.79 MB peak
+[2016.10.26-14.59.17:297][  0]LogMemory: Physical Memory: 5074.77 MB used, 16326.44 MB total
+[2016.10.26-14.59.17:297][  0]LogMemory: Virtual Memory: 384.78 MB used, 134217728.00 MB total
+[2016.10.26-14.59.17:595][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 980 Ti (Feature Level 11_0)
+[2016.10.26-14.59.17:595][  0]LogD3D11RHI: Adapter has 6102MB of dedicated video memory, 0MB of dedicated system memory, and 8163MB of shared system memory, 2 output[s]
+[2016.10.26-14.59.17:596][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.10.26-14.59.17:596][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8163MB of shared system memory, 0 output[s]
+[2016.10.26-14.59.17:596][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.10.26-14.59.17:599][  0]LogD3D11RHI: !Direct3DDevice
+[2016.10.26-14.59.17:600][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.10.26-14.59.17:612][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.26-14.59.17:620][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (D:/prog/0_myprogram/nekoroom/proj/Intermediate/Shaders/WorkingDirectory/9020/).
+[2016.10.26-14.59.17:620][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/myumoon/AppData/Local/Temp/UnrealShaderWorkingDir/C2D775304DE1BD8929BE9FB3D62839D5/'.
+[2016.10.26-14.59.17:620][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.26-14.59.18:151][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.26-14.59.18:154][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.26-14.59.18:157][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.26-14.59.18:160][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.26-14.59.18:162][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.26-14.59.18:164][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.26-14.59.18:166][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.26-14.59.18:167][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.26-14.59.18:169][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.26-14.59.18:171][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.26-14.59.18:173][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.26-14.59.18:177][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.26-14.59.18:177][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.26-14.59.18:178][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.26-14.59.18:192][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.26-14.59.18:194][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.26-14.59.18:195][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.26-14.59.18:197][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.26-14.59.18:198][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.26-14.59.18:251][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.26-14.59.18:289][  0]LogDerivedDataCache: Loaded boot cache 0.04s 41MB C:/Users/myumoon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.10.26-14.59.18:289][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/myumoon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.10.26-14.59.18:289][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/prog/0_myprogram/nekoroom/proj/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.26-14.59.18:289][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.26-14.59.18:289][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/prog/0_myprogram/nekoroom/proj/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.26-14.59.18:289][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.26-14.59.18:328][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.26-14.59.18:339][  0]LogDerivedDataCache: Using Local data cache path C:/Users/myumoon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.26-14.59.18:452][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.26-14.59.18:454][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.10.26-14.59.18:524][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.26-14.59.18:524][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.26-14.59.18:662][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.26-14.59.19:128][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.26-14.59.19:244][  0]LogAssetRegistry: FAssetRegistry took 0.0106 seconds to start up
+[2016.10.26-14.59.19:355][  0]SourceControl: Info Source control is disabled
+[2016.10.26-14.59.19:399][  0]SourceControl: Info Source control is disabled
+[2016.10.26-14.59.19:405][  0]SourceControl: Info Source control is disabled
+[2016.10.26-14.59.19:411][  0]SourceControl: Info Source control is disabled
+[2016.10.26-14.59.19:536][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.10.26-14.59.19:536][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.10.26-14.59.19:576][  0]LogEngine: Initializing Engine...
+[2016.10.26-14.59.19:578][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.10.26-14.59.19:578][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.26-14.59.19:658][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.26-14.59.19:662][  0]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.26-14.59.19:671][  0]LogInit: FAudioDevice initialized.
+[2016.10.26-14.59.19:686][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/myumoon/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.10.26-14.59.19:689][  0]LogInit: Texture streaming: Enabled
+[2016.10.26-14.59.19:692][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.10.26-14.59.19:692][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.10.26-14.59.19:692][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 2033b801412bafb1e5c199a06174dacb|f32138237ccd42f08182127283bf0fc9|400f1917-6872-45c5-a40f-81aaa2916a5d
+[2016.10.26-14.59.19:692][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.10.26-14.59.19:698][  0]LogInit: Transaction tracking system initialized
+[2016.10.26-14.59.19:712][  0]BlueprintLog: New page: Editor Load
+[2016.10.26-14.59.19:831][  0]LocalizationService: Info Localization service is disabled
+[2016.10.26-14.59.19:879][  0]LogConsoleResponse:Display: 
+[2016.10.26-14.59.19:956][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.10.26-14.59.19:987][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Content/' took 0.01s
+[2016.10.26-14.59.19:987][  0]SourceControl: Info Source control is disabled
+[2016.10.26-14.59.20:051][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.10.26-14.59.44:826][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.10.26-14.59.44:833][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.10.26-14.59.44:836][  0]Cmd: MAP LOAD FILE="D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.26-14.59.44:836][  0]LightingResults: New page: Lighting Build
+[2016.10.26-14.59.44:838][  0]MapCheck: New page: Map Check
+[2016.10.26-14.59.44:838][  0]LightingResults: New page: Lighting Build
+[2016.10.26-14.59.44:848][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002B20A1AB6A0
+[2016.10.26-14.59.45:129][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.10.26-14.59.45:135][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.26-14.59.45:136][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.26-14.59.45:170][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 34.391ms to complete.
+[2016.10.26-14.59.45:170][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.335
+[2016.10.26-14.59.45:216][  0]LogCollectionManager: Loaded 0 collections in 0.000979 seconds
+[2016.10.26-14.59.45:255][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Saved/Collections/' took 0.01s
+[2016.10.26-14.59.45:255][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Content/Developers/myumoon/Collections/' took 0.01s
+[2016.10.26-14.59.45:255][  0]LogFileCache: Scanning file cache for directory 'D:/prog/0_myprogram/nekoroom/proj/Content/Collections/' took 0.01s
+[2016.10.26-14.59.45:255][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2016.10.26-14.59.45:260][  0]LogContentBrowser: Native class hierarchy populated in 0.0047 seconds. Added 1895 classes and 343 folders.
+[2016.10.26-14.59.45:266][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.10.26-14.59.45:311][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.10.26-14.59.45:387][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.10.26-14.59.45:391][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.10.26-14.59.45:413][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_46a0_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_4ec4_0///####STATCAT_Advanced####
+[2016.10.26-14.59.45:413][  0]LogLoad: Full Startup: 28.43 seconds (BP compile: 0.05 seconds)
+[2016.10.26-14.59.45:428][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.10.26-14.59.45:467][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.10.26-14.59.45:593][  0]LogRenderer: Reallocating scene render targets to support 804x732 (Frame:2).
+[2016.10.26-14.59.45:743][  3]LogAssetRegistry: Asset discovery search completed in 26.5092 seconds
+[2016.10.26-14.59.45:743][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.10.26-14.59.45:743][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000013 seconds (updated 0 objects)
+[2016.10.26-14.59.47:850][244]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-14.59.47:850][244]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.26-14.59.47:850][244]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 27, 2016, 8:59:47 AM)
+[2016.10.26-14.59.47:850][244]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.10.26-14.59.47:868][244]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018321s)
+[2016.10.26-14.59.47:869][244]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.10.26-14.59.47:869][244]LogPlayLevel: PIE: World Init took: (0.000676s)
+[2016.10.26-14.59.47:869][244]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019176s)
+[2016.10.26-14.59.47:887][244]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.26-14.59.47:894][244]LogInit: FAudioDevice initialized.
+[2016.10.26-14.59.47:947][244]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.10.26-14.59.47:954][244]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.26-23.59.47
+[2016.10.26-14.59.47:955][244]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.10.26-14.59.47:955][244]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.10.26-14.59.47:955][244]LogWorld: Bringing up level for play took: 0.005592
+[2016.10.26-14.59.47:961][244]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.862
+[2016.10.26-14.59.47:961][244]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-14.59.50:289][519]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-14.59.50:320][519]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-14.59.50:329][519]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002B218313100
+[2016.10.26-15.00.47:287][463]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:\googledrive\GameProject\Design\Object\fbx\obj_cardboard.fbx)
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: NodeAttribute, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: Model, ItemCount : 2
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: Material, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: Texture, ItemCount : 1
+[2016.10.26-15.00.47:376][463]LogFbx: ItemName: Video, ItemCount : 1
+[2016.10.26-15.00.47:460][463]LogFbx: Loading FBX Scene from D:\googledrive\GameProject\Design\Object\fbx\obj_cardboard.fbx
+[2016.10.26-15.00.47:533][463]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.03.30:194][463]LogFbx: Loading FBX Scene from D:\googledrive\GameProject\Design\Object\fbx\obj_cardboard.fbx
+[2016.10.26-15.03.30:262][463]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.03.30:303][463]LogLinker:Warning: Can't find file '/Game/Room/obj_cardboard01_mat'
+[2016.10.26-15.03.30:303][463]LogLinker:Warning: Can't find file '/Game/Room/obj_cardboard01_mat'
+[2016.10.26-15.03.30:306][463]LogLinker:Warning: Can't find file '/Game/Room/obj_cardboard01_c01'
+[2016.10.26-15.03.30:306][463]LogLinker:Warning: Can't find file '/Game/Room/obj_cardboard01_c01'
+[2016.10.26-15.03.30:306][463]LogUObjectGlobals:Warning: Failed to find object 'Texture /Game/Room/obj_cardboard01_c01.obj_cardboard01_c01'
+[2016.10.26-15.03.30:308][463]LogStreaming:Warning: Failed to read file 'E:/GameProject/MAYA/3D/Game/sourceimages/obj_cardboard01_c01.tga' error.
+[2016.10.26-15.03.30:308][463]LogStreaming:Warning: Failed to read file 'D:\googledrive\GameProject\Design\Object\fbx/..\..\sourceimages\obj_cardboard01_c01.tga' error.
+[2016.10.26-15.03.30:308][463]LogStreaming:Warning: Failed to read file 'D:\googledrive\GameProject\Design\Object\fbx/obj_cardboard01_c01.tga' error.
+[2016.10.26-15.03.30:308][463]LogFbxMaterialImport:Warning: Unable to find TEXTure file obj_cardboard01_c01.tga. Tried:
+ - E:/GameProject/MAYA/3D/Game/sourceimages/obj_cardboard01_c01.tga
+ - D:\googledrive\GameProject\Design\Object\fbx/..\..\sourceimages\obj_cardboard01_c01.tga
+ - D:\googledrive\GameProject\Design\Object\fbx/obj_cardboard01_c01.tga
+[2016.10.26-15.03.30:311][463]LogMaterial: Missing cached shader map for material obj_cardboard01_mat, compiling. 
+[2016.10.26-15.03.30:324][463]LogFbx:Warning: Triangulating static mesh obj_cardboard_mesh
+[2016.10.26-15.03.30:334][463]LogStaticMesh: Building static mesh obj_cardboard...
+[2016.10.26-15.03.30:337][463]LogStaticMesh: Built static mesh [0.003385.2s] /Game/Room/obj_cardboard.obj_cardboard
+[2016.10.26-15.03.32:474][698]LogActorFactory: Actor Factory created obj_cardboard
+[2016.10.26-15.03.33:331][801]LogActorFactory: Actor Factory created obj_cardboard
+[2016.10.26-15.03.57:780][723]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_cardboard01_mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard01_mat.uasset" SILENT=true
+[2016.10.26-15.03.57:793][723]LogSavePackage: Save=10.678921ms
+[2016.10.26-15.03.57:793][723]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_mat9DAC250948CEF6EF451B209B1F9976EA.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard01_mat.uasset'
+[2016.10.26-15.03.57:795][723]LogSavePackage: Total save time: 14.560562ms
+[2016.10.26-15.03.57:795][723]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard01_mat.uasset
+[2016.10.26-15.03.57:808][723]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_cardboard" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard.uasset" SILENT=true
+[2016.10.26-15.03.57:816][723]LogSavePackage: Save=7.933183ms
+[2016.10.26-15.03.57:816][723]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard19632B664B1A06BB9157D9A15450116E.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard.uasset'
+[2016.10.26-15.03.57:817][723]LogSavePackage: Total save time: 8.933421ms
+[2016.10.26-15.03.57:817][723]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard.uasset
+[2016.10.26-15.04.30:618][589]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 D:\googledrive\GameProject\Design\Object\Texture\obj_cardboard01_c01.tga)
+[2016.10.26-15.04.30:860][589]LogTexture:Display: Building textures: obj_cardboard01_c01 (AutoDXT)
+[2016.10.26-15.04.31:445][589]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 D:\googledrive\GameProject\Design\Object\Texture\obj_clean_robot01_c01.tga)
+[2016.10.26-15.04.31:514][589]LogTexture:Display: Building textures: obj_clean_robot01_c01 (AutoDXT)
+[2016.10.26-15.04.31:669][589]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 D:\googledrive\GameProject\Design\Object\Texture\obj_curtain01_c01.tga)
+[2016.10.26-15.04.31:736][589]LogTexture:Display: Building textures: obj_curtain01_c01 (AutoDXT)
+[2016.10.26-15.04.38:092][259]LogMaterial: Missing cached shader map for material obj_cardboard01_c01_Mat, compiling. 
+[2016.10.26-15.04.38:098][259]LogMaterial: Missing cached shader map for material obj_clean_robot01_c01_Mat, compiling. 
+[2016.10.26-15.04.38:104][259]LogMaterial: Missing cached shader map for material obj_curtain01_c01_Mat, compiling. 
+[2016.10.26-15.04.41:230][632]Cmd: EDIT CUT
+[2016.10.26-15.04.41:236][632]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.10.26-15.04.41:244][632]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2016.10.26-15.04.54:902][265]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Materials/obj_cardboard01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_cardboard01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.04.54:914][265]LogSavePackage: Save=10.336822ms
+[2016.10.26-15.04.54:914][265]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_c01_Mat97ECD0D74974B404839ECAB45E6DA1E4.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_cardboard01_c01_Mat.uasset'
+[2016.10.26-15.04.54:914][265]LogSavePackage: Total save time: 11.318412ms
+[2016.10.26-15.04.54:915][265]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_cardboard01_c01_Mat.uasset
+[2016.10.26-15.04.54:926][265]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Materials/obj_clean_robot01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_clean_robot01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.04.54:938][265]LogSavePackage: Save=10.621435ms
+[2016.10.26-15.04.54:938][265]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robot01_c01_MatBF214123451600AD7C55AEA4858A33A8.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_clean_robot01_c01_Mat.uasset'
+[2016.10.26-15.04.54:938][265]LogSavePackage: Total save time: 11.723869ms
+[2016.10.26-15.04.54:938][265]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_clean_robot01_c01_Mat.uasset
+[2016.10.26-15.04.54:951][265]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Materials/obj_curtain01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_curtain01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.04.54:964][265]LogSavePackage: Save=11.921107ms
+[2016.10.26-15.04.54:964][265]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain01_c01_Mat40893C2C4233E8556B27E99FB3B3273C.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_curtain01_c01_Mat.uasset'
+[2016.10.26-15.04.54:965][265]LogSavePackage: Total save time: 12.882512ms
+[2016.10.26-15.04.54:965][265]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_curtain01_c01_Mat.uasset
+[2016.10.26-15.05.09:930][868]LogRenderer: Reallocating scene render targets to support 1192x732 (Frame:24429).
+[2016.10.26-15.09.48:584][270]LogSavePackage: Save=177.875900ms
+[2016.10.26-15.09.48:584][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap_Auto189A3D6BF42557036356A76A2189D30FE.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2016.10.26-15.09.48:585][270]LogSavePackage: Total save time: 186.385203ms
+[2016.10.26-15.09.48:585][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap
+[2016.10.26-15.09.48:588][270]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.201
+[2016.10.26-15.09.48:588][270]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.201
+[2016.10.26-15.09.48:590][270]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Room/obj_cardboard" FILE="D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/Room/obj_cardboard_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.10.26-15.09.48:593][270]LogSavePackage: Save=2.237060ms
+[2016.10.26-15.09.48:593][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard_Auto113EA949F45BF623D73C4138452136286.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/Room/obj_cardboard_Auto1.uasset'
+[2016.10.26-15.09.48:594][270]LogSavePackage: Total save time: 2.804246ms
+[2016.10.26-15.09.48:594][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/Room/obj_cardboard_Auto1.uasset
+[2016.10.26-15.09.48:595][270]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Room/obj_cardboard01_mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/Room/obj_cardboard01_mat_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.10.26-15.09.48:598][270]LogSavePackage: Save=2.179830ms
+[2016.10.26-15.09.48:598][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_mat_Auto19D0823EF4E225C060C1410A613AC90BB.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/Room/obj_cardboard01_mat_Auto1.uasset'
+[2016.10.26-15.09.48:599][270]LogSavePackage: Total save time: 2.674203ms
+[2016.10.26-15.09.48:599][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/Room/obj_cardboard01_mat_Auto1.uasset
+[2016.10.26-15.09.48:600][270]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/RoomObjects/Textures/obj_cardboard01_c01] ([1] browsable assets)...
+[2016.10.26-15.09.48:608][270]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/RoomObjects/Textures/obj_cardboard01_c01.obj_cardboard01_c01]
+[2016.10.26-15.09.48:608][270]OBJ SavePackage: Finished generating thumbnails for package [/Game/RoomObjects/Textures/obj_cardboard01_c01]
+[2016.10.26-15.09.48:619][270]LogSavePackage: Save=10.509787ms
+[2016.10.26-15.09.48:619][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_c01_Auto137834E1E4A37A534A83804A6E07B7CB8.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_cardboard01_c01_Auto1.uasset'
+[2016.10.26-15.09.48:619][270]LogSavePackage: Total save time: 11.005178ms
+[2016.10.26-15.09.48:619][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_cardboard01_c01_Auto1.uasset
+[2016.10.26-15.09.48:621][270]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/RoomObjects/obj_cardboard] ([1] browsable assets)...
+[2016.10.26-15.09.48:630][270]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/RoomObjects/obj_cardboard.obj_cardboard]
+[2016.10.26-15.09.48:630][270]OBJ SavePackage: Finished generating thumbnails for package [/Game/RoomObjects/obj_cardboard]
+[2016.10.26-15.09.48:630][270]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_cardboard" FILE="D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/obj_cardboard_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.10.26-15.09.48:643][270]LogSavePackage: Save=9.064487ms
+[2016.10.26-15.09.48:643][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard_Auto18F4C62994156FDF83D79C694222B0080.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/obj_cardboard_Auto1.uasset'
+[2016.10.26-15.09.48:644][270]LogSavePackage: Total save time: 12.737140ms
+[2016.10.26-15.09.48:644][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/obj_cardboard_Auto1.uasset
+[2016.10.26-15.09.48:645][270]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/RoomObjects/Textures/obj_clean_robot01_c01] ([1] browsable assets)...
+[2016.10.26-15.09.48:652][270]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/RoomObjects/Textures/obj_clean_robot01_c01.obj_clean_robot01_c01]
+[2016.10.26-15.09.48:652][270]OBJ SavePackage: Finished generating thumbnails for package [/Game/RoomObjects/Textures/obj_clean_robot01_c01]
+[2016.10.26-15.09.48:660][270]LogSavePackage: Save=6.776585ms
+[2016.10.26-15.09.48:660][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robot01_c01_Auto17A77AD954AB7ACE2D078A7A21C11DAD7.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_clean_robot01_c01_Auto1.uasset'
+[2016.10.26-15.09.48:660][270]LogSavePackage: Total save time: 7.330738ms
+[2016.10.26-15.09.48:660][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_clean_robot01_c01_Auto1.uasset
+[2016.10.26-15.09.48:662][270]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/RoomObjects/Textures/obj_curtain01_c01] ([1] browsable assets)...
+[2016.10.26-15.09.48:668][270]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/RoomObjects/Textures/obj_curtain01_c01.obj_curtain01_c01]
+[2016.10.26-15.09.48:668][270]OBJ SavePackage: Finished generating thumbnails for package [/Game/RoomObjects/Textures/obj_curtain01_c01]
+[2016.10.26-15.09.48:680][270]LogSavePackage: Save=10.842178ms
+[2016.10.26-15.09.48:680][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain01_c01_Auto11F41816F48131924A992CCA97CFB81C9.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_curtain01_c01_Auto1.uasset'
+[2016.10.26-15.09.48:680][270]LogSavePackage: Total save time: 11.525355ms
+[2016.10.26-15.09.48:680][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_curtain01_c01_Auto1.uasset
+[2016.10.26-15.09.48:685][270]LogSavePackage: Save=2.236293ms
+[2016.10.26-15.09.48:685][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_c01_Mat_Auto1A2F7F8C0488EC32F39168D9EBD35424E.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_cardboard01_c01_Mat_Auto1.uasset'
+[2016.10.26-15.09.48:685][270]LogSavePackage: Total save time: 2.774607ms
+[2016.10.26-15.09.48:685][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_cardboard01_c01_Mat_Auto1.uasset
+[2016.10.26-15.09.48:689][270]LogSavePackage: Save=2.181874ms
+[2016.10.26-15.09.48:689][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robot01_c01_Mat_Auto1CFCEB90D45D6118AB3F6EAB83B2E34B8.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_clean_robot01_c01_Mat_Auto1.uasset'
+[2016.10.26-15.09.48:690][270]LogSavePackage: Total save time: 2.625912ms
+[2016.10.26-15.09.48:690][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_clean_robot01_c01_Mat_Auto1.uasset
+[2016.10.26-15.09.48:694][270]LogSavePackage: Save=2.240637ms
+[2016.10.26-15.09.48:694][270]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain01_c01_Mat_Auto183ECF8454AB6E508ABE7DE9098F51552.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_curtain01_c01_Mat_Auto1.uasset'
+[2016.10.26-15.09.48:694][270]LogSavePackage: Total save time: 2.794027ms
+[2016.10.26-15.09.48:694][270]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Saved/Autosaves/Game/RoomObjects/Textures/obj_curtain01_c01_Mat_Auto1.uasset
+[2016.10.26-15.09.48:694][270]LogFileHelpers: Auto-saving content packages took 0.106
+[2016.10.26-15.19.44:760][843]LogSavePackage: Save=179.951492ms
+[2016.10.26-15.19.44:760][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap63678FDC40C04CC3EAE2FDA2CD8C6D70.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.19.44:764][843]LogSavePackage: Total save time: 192.579787ms
+[2016.10.26-15.19.44:764][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.19.44:777][843]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.249
+[2016.10.26-15.19.44:780][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Room/obj_cardboard" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/Room/obj_cardboard.uasset" SILENT=true
+[2016.10.26-15.19.44:783][843]LogSavePackage: Save=2.253411ms
+[2016.10.26-15.19.44:783][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard890B81604FEBD753A6508F9BFD6C3936.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/Room/obj_cardboard.uasset'
+[2016.10.26-15.19.44:787][843]LogSavePackage: Total save time: 6.539747ms
+[2016.10.26-15.19.44:787][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/Room/obj_cardboard.uasset
+[2016.10.26-15.19.44:790][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Room/obj_cardboard01_mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/Room/obj_cardboard01_mat.uasset" SILENT=true
+[2016.10.26-15.19.44:794][843]LogSavePackage: Save=2.221730ms
+[2016.10.26-15.19.44:794][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_mat53E2B402478C71908136B8871AB3370E.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/Room/obj_cardboard01_mat.uasset'
+[2016.10.26-15.19.44:797][843]LogSavePackage: Total save time: 5.763315ms
+[2016.10.26-15.19.44:797][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/Room/obj_cardboard01_mat.uasset
+[2016.10.26-15.19.44:807][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/obj_cardboard01_c01" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_cardboard01_c01.uasset" SILENT=true
+[2016.10.26-15.19.45:022][843]LogSavePackage: Save=213.317551ms
+[2016.10.26-15.19.45:022][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_c0102BC34024F6A8880009FA5A2B0C7801B.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_cardboard01_c01.uasset'
+[2016.10.26-15.19.45:025][843]LogSavePackage: Total save time: 216.926083ms
+[2016.10.26-15.19.45:025][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_cardboard01_c01.uasset
+[2016.10.26-15.19.45:032][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_cardboard" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard.uasset" SILENT=true
+[2016.10.26-15.19.45:040][843]LogSavePackage: Save=3.423550ms
+[2016.10.26-15.19.45:040][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard2ED07A864013FA9FAE0358A3F240B920.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard.uasset'
+[2016.10.26-15.19.45:043][843]LogSavePackage: Total save time: 10.405801ms
+[2016.10.26-15.19.45:043][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_cardboard.uasset
+[2016.10.26-15.19.45:053][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/obj_clean_robot01_c01" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_clean_robot01_c01.uasset" SILENT=true
+[2016.10.26-15.19.45:109][843]LogSavePackage: Save=55.092838ms
+[2016.10.26-15.19.45:109][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robot01_c0155AD4F1A4CE738FC180200B148EEAED3.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_clean_robot01_c01.uasset'
+[2016.10.26-15.19.45:113][843]LogSavePackage: Total save time: 58.757056ms
+[2016.10.26-15.19.45:113][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_clean_robot01_c01.uasset
+[2016.10.26-15.19.45:123][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/obj_curtain01_c01" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_curtain01_c01.uasset" SILENT=true
+[2016.10.26-15.19.45:263][843]LogSavePackage: Save=138.781509ms
+[2016.10.26-15.19.45:263][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain01_c01F9AB51724878A330CBD888A167746542.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_curtain01_c01.uasset'
+[2016.10.26-15.19.45:266][843]LogSavePackage: Total save time: 142.507818ms
+[2016.10.26-15.19.45:266][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_curtain01_c01.uasset
+[2016.10.26-15.19.45:269][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/obj_cardboard01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_cardboard01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.19.45:273][843]LogSavePackage: Save=2.244469ms
+[2016.10.26-15.19.45:273][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_cardboard01_c01_MatBA1AABD347597E83A3304A8DE089DCDB.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_cardboard01_c01_Mat.uasset'
+[2016.10.26-15.19.45:276][843]LogSavePackage: Total save time: 5.944971ms
+[2016.10.26-15.19.45:276][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_cardboard01_c01_Mat.uasset
+[2016.10.26-15.19.45:279][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/obj_clean_robot01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_clean_robot01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.19.45:283][843]LogSavePackage: Save=2.322649ms
+[2016.10.26-15.19.45:283][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robot01_c01_Mat0BD6F3BB4C9A040379E36DB375C00453.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_clean_robot01_c01_Mat.uasset'
+[2016.10.26-15.19.45:285][843]LogSavePackage: Total save time: 4.889034ms
+[2016.10.26-15.19.45:285][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_clean_robot01_c01_Mat.uasset
+[2016.10.26-15.19.45:291][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/obj_curtain01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_curtain01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.19.45:294][843]LogSavePackage: Save=2.201547ms
+[2016.10.26-15.19.45:294][843]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain01_c01_MatA9D550CE4FEE9488174AE7A7805C60D7.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_curtain01_c01_Mat.uasset'
+[2016.10.26-15.19.45:294][843]LogSavePackage: Total save time: 3.198463ms
+[2016.10.26-15.19.45:294][843]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/obj_curtain01_c01_Mat.uasset
+[2016.10.26-15.19.52:312][527]LogActorFactory: Actor Factory created obj_cardboard
+[2016.10.26-15.19.53:115][623]LogActorFactory: Actor Factory created obj_cardboard
+[2016.10.26-15.19.54:828][824]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.10.26-15.20.02:670][757]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.10.26-15.20.30:954][206]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:\googledrive\GameProject\Design\Object\fbx\obj_clean_robot.fbx)
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: NodeAttribute, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: Model, ItemCount : 2
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: Material, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: Texture, ItemCount : 1
+[2016.10.26-15.20.31:011][206]LogFbx: ItemName: Video, ItemCount : 1
+[2016.10.26-15.20.31:119][206]LogFbx: Loading FBX Scene from D:\googledrive\GameProject\Design\Object\fbx\obj_clean_robot.fbx
+[2016.10.26-15.20.31:192][206]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.20.45:944][206]LogFbx: Loading FBX Scene from D:\googledrive\GameProject\Design\Object\fbx\obj_clean_robot.fbx
+[2016.10.26-15.20.46:014][206]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.20.46:036][206]LogFbx:Warning: Triangulating static mesh obj_clean_robot_mesh
+[2016.10.26-15.20.46:060][206]LogStaticMesh: Building static mesh obj_clean_robot...
+[2016.10.26-15.20.46:066][206]LogStaticMesh: Built static mesh [0.005599.2s] /Game/RoomObjects/obj_clean_robot.obj_clean_robot
+[2016.10.26-15.20.46:067][206]LogStaticMesh:Warning: obj_clean_robot has degenerate tangent bases which will result in incorrect shading. 
+[2016.10.26-15.20.46:068][206]FBXImport:Warning: Warning obj_clean_robot has degenerate tangent bases which will result in incorrect shading.  
+[2016.10.26-15.21.33:720][257]LogSavePackage: Save=175.120712ms
+[2016.10.26-15.21.33:720][257]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap9AE969E644A18AB48C5ACF8AB5A565E0.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.21.33:722][257]LogSavePackage: Total save time: 177.944623ms
+[2016.10.26-15.21.33:722][257]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.21.33:731][257]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.228
+[2016.10.26-15.21.33:742][257]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_clean_robot" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_clean_robot.uasset" SILENT=true
+[2016.10.26-15.21.33:751][257]LogSavePackage: Save=9.093357ms
+[2016.10.26-15.21.33:751][257]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robotD33E368C41D3C0F1060BF5B876FBA19E.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_clean_robot.uasset'
+[2016.10.26-15.21.33:752][257]LogSavePackage: Total save time: 10.192469ms
+[2016.10.26-15.21.33:752][257]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_clean_robot.uasset
+[2016.10.26-15.22.05:077][472]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_clean_robot" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_clean_robot.uasset" SILENT=true
+[2016.10.26-15.22.05:091][472]LogSavePackage: Save=9.527688ms
+[2016.10.26-15.22.05:091][472]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_clean_robotEDAE95024139DD1F2D1ECC9AC7D65017.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_clean_robot.uasset'
+[2016.10.26-15.22.05:092][472]LogSavePackage: Total save time: 13.828844ms
+[2016.10.26-15.22.05:092][472]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_clean_robot.uasset
+[2016.10.26-15.23.05:031][722]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:/googledrive/GameProject/Design/Object/fbx/obj_curtain.fbx)
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: NodeAttribute, ItemCount : 14
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Model, ItemCount : 15
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Material, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Texture, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: AnimationCurveNode, ItemCount : 65
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: AnimationCurve, ItemCount : 130
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Pose, ItemCount : 1
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Deformer, ItemCount : 14
+[2016.10.26-15.23.05:039][722]LogFbx: ItemName: Video, ItemCount : 1
+[2016.10.26-15.23.05:093][722]LogFbx: Loading FBX Scene from D:/googledrive/GameProject/Design/Object/fbx/obj_curtain.fbx
+[2016.10.26-15.23.05:209][722]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.23.19:417][722]LogFbx: Loading FBX Scene from D:/googledrive/GameProject/Design/Object/fbx/obj_curtain.fbx
+[2016.10.26-15.23.19:529][722]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.23.19:552][722]LogFbx: =================================================
+[2016.10.26-15.23.19:552][722]LogFbx: Dumping Node START [obj] 
+[2016.10.26-15.23.19:552][722]LogFbx: 	Total Deformer Count 406182672.
+[2016.10.26-15.23.19:552][722]LogFbx: 		[Node 1]  (Type Skin).
+[2016.10.26-15.23.19:552][722]LogFbx: =================================================
+[2016.10.26-15.23.19:552][722]LogFbx: 	Attribute () Type (4).
+[2016.10.26-15.23.19:552][722]LogFbx: 		[Node Attribute Child 1] obj (Type Mesh).
+[2016.10.26-15.23.19:552][722]LogFbx: Dumping Node END [obj]
+[2016.10.26-15.23.19:553][722]LogFbx: =================================================
+[2016.10.26-15.23.19:553][722]LogFbx: Dumping Node START [obj] 
+[2016.10.26-15.23.19:553][722]LogFbx: 	Total Deformer Count 406182672.
+[2016.10.26-15.23.19:553][722]LogFbx: 		[Node 1]  (Type Skin).
+[2016.10.26-15.23.19:553][722]LogFbx: =================================================
+[2016.10.26-15.23.19:553][722]LogFbx: 	Attribute () Type (4).
+[2016.10.26-15.23.19:553][722]LogFbx: 		[Node Attribute Child 1] obj (Type Mesh).
+[2016.10.26-15.23.19:553][722]LogFbx: Dumping Node END [obj]
+[2016.10.26-15.23.19:553][722]LogFbx: =================================================
+[2016.10.26-15.23.19:553][722]LogFbx: Dumping Node START [obj] 
+[2016.10.26-15.23.19:553][722]LogFbx: 	Total Deformer Count 406182672.
+[2016.10.26-15.23.19:553][722]LogFbx: 		[Node 1]  (Type Skin).
+[2016.10.26-15.23.19:553][722]LogFbx: =================================================
+[2016.10.26-15.23.19:553][722]LogFbx: 	Attribute () Type (4).
+[2016.10.26-15.23.19:553][722]LogFbx: 		[Node Attribute Child 1] obj (Type Mesh).
+[2016.10.26-15.23.19:553][722]LogFbx: Dumping Node END [obj]
+[2016.10.26-15.23.19:555][722]LogFbx: Valid bind pose for Pose (skinCluster1) - obj
+[2016.10.26-15.23.19:558][722]LogFbx: Triangulating skeletal mesh obj
+[2016.10.26-15.23.19:574][722]LogFbx:Warning: Bones digested - 15  Depth of hierarchy - 6
+[2016.10.26-15.23.19:575][722]LogSkeletalMesh: Chunk 0: 25 rigid vertices, 38 soft vertices, 13 active bones
+[2016.10.26-15.23.19:575][722]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 96 triangles
+[2016.10.26-15.23.19:576][722]LogLinker:Warning: Can't find file '/Game/RoomObjects/obj_curtain_PhysicsAsset'
+[2016.10.26-15.23.19:576][722]LogLinker:Warning: Can't find file '/Game/RoomObjects/obj_curtain_PhysicsAsset'
+[2016.10.26-15.23.19:576][722]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/RoomObjects/obj_curtain_PhysicsAsset.obj_curtain_PhysicsAsset'
+[2016.10.26-15.23.19:577][722]LogLinker:Warning: Can't find file '/Game/RoomObjects/obj_curtain_Skeleton'
+[2016.10.26-15.23.19:577][722]LogLinker:Warning: Can't find file '/Game/RoomObjects/obj_curtain_Skeleton'
+[2016.10.26-15.23.19:577][722]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/RoomObjects/obj_curtain_Skeleton.obj_curtain_Skeleton'
+[2016.10.26-15.23.31:634][164]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002B2060DE7A0
+[2016.10.26-15.23.31:634][164]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002B206380C20
+[2016.10.26-15.23.31:652][164]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_curtain" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain.uasset" SILENT=true
+[2016.10.26-15.23.31:663][164]LogSavePackage: Save=9.613276ms
+[2016.10.26-15.23.31:663][164]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain773F752F4D4E5A022F306F98D2AC1A21.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain.uasset'
+[2016.10.26-15.23.31:664][164]LogSavePackage: Total save time: 10.556541ms
+[2016.10.26-15.23.31:664][164]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain.uasset
+[2016.10.26-15.23.31:667][164]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_curtain_PhysicsAsset" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain_PhysicsAsset.uasset" SILENT=true
+[2016.10.26-15.23.31:674][164]LogSavePackage: Save=5.730358ms
+[2016.10.26-15.23.31:674][164]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain_PhysicsAsset05D9D97841C5334ED240F5B58B2F8160.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain_PhysicsAsset.uasset'
+[2016.10.26-15.23.31:675][164]LogSavePackage: Total save time: 6.667238ms
+[2016.10.26-15.23.31:675][164]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain_PhysicsAsset.uasset
+[2016.10.26-15.23.31:677][164]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_curtain_Skeleton" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain_Skeleton.uasset" SILENT=true
+[2016.10.26-15.23.31:681][164]LogSavePackage: Save=2.539814ms
+[2016.10.26-15.23.31:681][164]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain_SkeletonCDD0E2844C92D706519E7FA310811AAE.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain_Skeleton.uasset'
+[2016.10.26-15.23.31:682][164]LogSavePackage: Total save time: 3.547717ms
+[2016.10.26-15.23.31:682][164]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain_Skeleton.uasset
+[2016.10.26-15.23.34:406][464]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2016.10.26-15.23.38:180][898]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2016.10.26-15.23.46:681][882]LogMaterial:Warning: Material /Game/RoomObjects/Materials/obj_curtain01_c01_Mat.obj_curtain01_c01_Mat needed to have new flag set bUsedWithSkeletalMesh !
+[2016.10.26-15.23.46:683][882]LogMaterial: Missing cached shader map for material obj_curtain01_c01_Mat, compiling. 
+[2016.10.26-15.23.46:690][882]LogMaterial: 0.000128 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.10.26-15.24.03:579][755]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Materials/obj_curtain01_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_curtain01_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.24.03:587][755]LogSavePackage: Save=3.741633ms
+[2016.10.26-15.24.03:587][755]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtain01_c01_Mat49995892485F9D57E5E36CBAAAD54A9A.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_curtain01_c01_Mat.uasset'
+[2016.10.26-15.24.03:588][755]LogSavePackage: Total save time: 8.742314ms
+[2016.10.26-15.24.03:589][755]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/obj_curtain01_c01_Mat.uasset
+[2016.10.26-15.24.03:600][755]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/obj_curtain" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain.uasset" SILENT=true
+[2016.10.26-15.24.03:616][755]LogSavePackage: Save=10.916269ms
+[2016.10.26-15.24.03:616][755]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/obj_curtainD883D7A5441923B566B445BAC62DA4E0.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain.uasset'
+[2016.10.26-15.24.03:618][755]LogSavePackage: Total save time: 16.072802ms
+[2016.10.26-15.24.03:618][755]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/obj_curtain.uasset
+[2016.10.26-15.24.15:372][138]LogContentBrowser: Native class hierarchy updated for 'PhAT' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.10.26-15.24.37:290][699]LogSavePackage: Save=176.736160ms
+[2016.10.26-15.24.37:290][699]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap0AE7F41648E4B27A31870E9B869032EA.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.24.37:292][699]LogSavePackage: Total save time: 179.736365ms
+[2016.10.26-15.24.37:292][699]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.24.37:302][699]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.234
+[2016.10.26-15.24.42:796][356]LogActorFactory: Actor Factory created obj_cardboard
+[2016.10.26-15.24.46:080][745]LogActorFactory: Actor Factory created obj_cardboard
+[2016.10.26-15.24.46:674][782]LogSavePackage: Save=179.933609ms
+[2016.10.26-15.24.46:674][782]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMapE1CCD1B94FE7604B16B84F952A7D3F35.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.24.46:676][782]LogSavePackage: Total save time: 189.856276ms
+[2016.10.26-15.24.46:676][782]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.24.46:686][782]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.243
+[2016.10.26-15.24.47:590][890]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_cardboard)
+[2016.10.26-15.24.50:062][181]Cmd: TRANSACTION UNDO
+[2016.10.26-15.24.50:062][181]LogEditorTransaction: Undo Clicking on Actors
+[2016.10.26-15.24.54:203][668]Cmd: DELETE
+[2016.10.26-15.24.54:203][668]Cmd: ACTOR DELETE
+[2016.10.26-15.24.54:203][668]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.10.26-15.24.54:211][668]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2016.10.26-15.24.55:735][850]LogActorFactory: Actor Factory created obj_clean_robot
+[2016.10.26-15.24.59:390][288]LogActorFactory: Actor Factory created obj_clean_robot
+[2016.10.26-15.24.59:910][346]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (obj_curtain)
+[2016.10.26-15.25.06:218][ 96]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.10.26-15.25.06:724][151]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_cardboard)
+[2016.10.26-15.25.09:923][499]LogSavePackage: Save=184.416153ms
+[2016.10.26-15.25.09:923][499]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap766E98BF4FF61E7DDCA35EB5C144FFD3.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.25.09:925][499]LogSavePackage: Total save time: 187.509101ms
+[2016.10.26-15.25.09:925][499]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.25.09:936][499]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.245
+[2016.10.26-15.25.10:496][566]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2016.10.26-15.25.15:451][112]LogSavePackage: Save=177.291595ms
+[2016.10.26-15.25.15:451][112]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap986A844A42CAF950ECBE029C187F5F84.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.25.15:453][112]LogSavePackage: Total save time: 179.942291ms
+[2016.10.26-15.25.15:453][112]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.25.15:460][112]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.231
+[2016.10.26-15.25.20:584][722]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.10.26-15.25.21:632][839]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.10.26-15.25.22:419][931]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.10.26-15.25.39:035][921]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_cardboard)
+[2016.10.26-15.25.44:949][625]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_clean_robot)
+[2016.10.26-15.25.48:790][ 51]LogSavePackage: Save=175.953857ms
+[2016.10.26-15.25.48:790][ 51]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMapB0E272854B4BE2F804020887F295B858.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.25.48:792][ 51]LogSavePackage: Total save time: 178.906795ms
+[2016.10.26-15.25.48:792][ 51]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.25.48:798][ 51]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.229
+[2016.10.26-15.27.29:589][296]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:\googledrive\GameProject\Design\BG\fbx\bg_room.fbx)
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: NodeAttribute, ItemCount : 1
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: Model, ItemCount : 2
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: Material, ItemCount : 2
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: Texture, ItemCount : 2
+[2016.10.26-15.27.29:637][296]LogFbx: ItemName: Video, ItemCount : 2
+[2016.10.26-15.27.29:711][296]LogFbx: Loading FBX Scene from D:\googledrive\GameProject\Design\BG\fbx\bg_room.fbx
+[2016.10.26-15.27.29:784][296]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.27.44:089][296]LogFbx: Loading FBX Scene from D:\googledrive\GameProject\Design\BG\fbx\bg_room.fbx
+[2016.10.26-15.27.44:160][296]LogFbx: FBX Scene Loaded Succesfully
+[2016.10.26-15.27.44:181][296]LogFbx:Warning: Triangulating static mesh bg_room_mesh
+[2016.10.26-15.27.44:194][296]LogStaticMesh: Building static mesh bg_room...
+[2016.10.26-15.27.44:196][296]LogStaticMesh: Built static mesh [0.003762.2s] /Game/RoomObjects/bg_room.bg_room
+[2016.10.26-15.27.47:817][725]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/bg_room" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/bg_room.uasset" SILENT=true
+[2016.10.26-15.27.47:828][725]LogSavePackage: Save=9.836574ms
+[2016.10.26-15.27.47:828][725]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room8BEEA6C04A915A73ADA80F8BCF00F8CB.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/bg_room.uasset'
+[2016.10.26-15.27.47:829][725]LogSavePackage: Total save time: 10.937475ms
+[2016.10.26-15.27.47:829][725]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/bg_room.uasset
+[2016.10.26-15.27.59:573][959]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 D:\googledrive\GameProject\Design\BG\Texture\bg_room_wall_c01.tga)
+[2016.10.26-15.27.59:678][959]LogTexture:Display: Building textures: bg_room_wall_c01 (AutoDXT)
+[2016.10.26-15.28.00:260][959]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 D:\googledrive\GameProject\Design\BG\Texture\bg_room_floor_c01.tga)
+[2016.10.26-15.28.00:323][959]LogTexture:Display: Building textures: bg_room_floor_c01 (AutoDXT)
+[2016.10.26-15.28.04:153][141]LogMaterial: Missing cached shader map for material bg_room_floor_c01_Mat, compiling. 
+[2016.10.26-15.28.04:161][141]LogMaterial: Missing cached shader map for material bg_room_wall_c01_Mat, compiling. 
+[2016.10.26-15.28.07:806][545]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Materials/bg_room_floor_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/bg_room_floor_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.28.07:819][545]LogSavePackage: Save=11.772923ms
+[2016.10.26-15.28.07:819][545]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room_floor_c01_Mat158841024BCF917D9FC4B482A73B1900.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/bg_room_floor_c01_Mat.uasset'
+[2016.10.26-15.28.07:820][545]LogSavePackage: Total save time: 13.054967ms
+[2016.10.26-15.28.07:820][545]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/bg_room_floor_c01_Mat.uasset
+[2016.10.26-15.28.07:834][545]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Materials/bg_room_wall_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/bg_room_wall_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.28.07:846][545]LogSavePackage: Save=10.935943ms
+[2016.10.26-15.28.07:846][545]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room_wall_c01_MatBD01AAF5446A5B3E9EB000A07FF0366D.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/bg_room_wall_c01_Mat.uasset'
+[2016.10.26-15.28.07:847][545]LogSavePackage: Total save time: 11.988048ms
+[2016.10.26-15.28.07:847][545]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Materials/bg_room_wall_c01_Mat.uasset
+[2016.10.26-15.28.33:895][613]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/bg_room" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/bg_room.uasset" SILENT=true
+[2016.10.26-15.28.33:909][613]LogSavePackage: Save=9.751496ms
+[2016.10.26-15.28.33:909][613]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room85D10A69440917566BCF86A963808F47.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/bg_room.uasset'
+[2016.10.26-15.28.33:910][613]LogSavePackage: Total save time: 14.165834ms
+[2016.10.26-15.28.33:910][613]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/bg_room.uasset
+[2016.10.26-15.28.33:919][613]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/bg_room_wall_c01" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_wall_c01.uasset" SILENT=true
+[2016.10.26-15.28.33:986][613]LogSavePackage: Save=66.009109ms
+[2016.10.26-15.28.33:986][613]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room_wall_c01780FF0BA45C3BF82E2EF23B22A855541.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_wall_c01.uasset'
+[2016.10.26-15.28.33:987][613]LogSavePackage: Total save time: 67.134790ms
+[2016.10.26-15.28.33:987][613]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_wall_c01.uasset
+[2016.10.26-15.28.33:996][613]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/bg_room_floor_c01" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_floor_c01.uasset" SILENT=true
+[2016.10.26-15.28.34:118][613]LogSavePackage: Save=121.061317ms
+[2016.10.26-15.28.34:118][613]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room_floor_c016694535E4DB3FC5B4FC322AF0AEE5AE7.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_floor_c01.uasset'
+[2016.10.26-15.28.34:119][613]LogSavePackage: Total save time: 122.123130ms
+[2016.10.26-15.28.34:119][613]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_floor_c01.uasset
+[2016.10.26-15.28.34:122][613]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/bg_room_floor_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_floor_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.28.34:125][613]LogSavePackage: Save=2.300421ms
+[2016.10.26-15.28.34:125][613]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room_floor_c01_MatDA0563A346C189375E02AAB0E54C06F5.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_floor_c01_Mat.uasset'
+[2016.10.26-15.28.34:126][613]LogSavePackage: Total save time: 3.353801ms
+[2016.10.26-15.28.34:126][613]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_floor_c01_Mat.uasset
+[2016.10.26-15.28.34:130][613]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RoomObjects/Textures/bg_room_wall_c01_Mat" FILE="D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_wall_c01_Mat.uasset" SILENT=true
+[2016.10.26-15.28.34:133][613]LogSavePackage: Save=2.261076ms
+[2016.10.26-15.28.34:133][613]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/bg_room_wall_c01_MatADE074394D248C13D9E93FAD31BD6747.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_wall_c01_Mat.uasset'
+[2016.10.26-15.28.34:134][613]LogSavePackage: Total save time: 3.434535ms
+[2016.10.26-15.28.34:134][613]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/RoomObjects/Textures/bg_room_wall_c01_Mat.uasset
+[2016.10.26-15.28.39:573][262]LogActorFactory: Actor Factory created bg_room
+[2016.10.26-15.28.44:009][793]LogActorFactory: Actor Factory created bg_room
+[2016.10.26-15.28.55:776][198]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.10.26-15.28.57:564][378]LogSavePackage: Save=181.513290ms
+[2016.10.26-15.28.57:564][378]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap0051A578439CD4B178D832A570539D8B.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.28.57:566][378]LogSavePackage: Total save time: 184.325710ms
+[2016.10.26-15.28.57:566][378]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.28.57:576][378]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.240
+[2016.10.26-15.29.14:669][423]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (obj_curtain)
+[2016.10.26-15.29.28:357][ 57]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2016.10.26-15.29.35:773][928]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_clean_robot)
+[2016.10.26-15.29.38:747][275]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_cardboard)
+[2016.10.26-15.30.03:826][245]LogSavePackage: Save=178.305374ms
+[2016.10.26-15.30.03:826][245]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap987A50A04585B72DD54FE4A58F6B1902.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.30.03:828][245]LogSavePackage: Total save time: 188.399222ms
+[2016.10.26-15.30.03:828][245]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.30.03:835][245]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.239
+[2016.10.26-15.30.05:362][428]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (bg_room)
+[2016.10.26-15.30.09:839][959]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (obj_clean_robot)
+[2016.10.26-15.30.12:285][218]LogSavePackage: Save=177.927002ms
+[2016.10.26-15.30.12:285][218]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMapF63A454C46E0ECB82952D0B37A1C49B0.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.30.12:287][218]LogSavePackage: Total save time: 181.050856ms
+[2016.10.26-15.30.12:287][218]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.30.12:294][218]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.231
+[2016.10.26-15.32.00:482][398]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.10.26-15.32.00:997][454]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.10.26-15.32.08:904][394]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (obj_cardboard)
+[2016.10.26-15.32.09:451][452]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (obj_cardboard)
+[2016.10.26-15.32.10:194][533]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (bg_room)
+[2016.10.26-15.32.24:328][222]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.24:328][222]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.26-15.32.24:328][222]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 27, 2016, 9:32:24 AM)
+[2016.10.26-15.32.24:328][222]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.10.26-15.32.24:345][222]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016539s)
+[2016.10.26-15.32.24:346][222]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.10.26-15.32.24:346][222]LogPlayLevel: PIE: World Init took: (0.000796s)
+[2016.10.26-15.32.24:346][222]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.017585s)
+[2016.10.26-15.32.24:360][222]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.26-15.32.24:366][222]LogInit: FAudioDevice initialized.
+[2016.10.26-15.32.24:397][222]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.10.26-15.32.24:401][222]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.27-00.32.24
+[2016.10.26-15.32.24:401][222]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.10.26-15.32.24:401][222]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.10.26-15.32.24:401][222]LogWorld: Bringing up level for play took: 0.002902
+[2016.10.26-15.32.24:402][222]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.697
+[2016.10.26-15.32.24:402][222]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.35:448][542]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.35:497][542]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.35:511][542]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002B290AE3420
+[2016.10.26-15.32.36:494][657]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (bg_room)
+[2016.10.26-15.32.39:005][927]LogSavePackage: Save=179.892212ms
+[2016.10.26-15.32.39:005][927]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMap0CDF6C8648B2298600E1A1B097D9A14B.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.32.39:007][927]LogSavePackage: Total save time: 182.908770ms
+[2016.10.26-15.32.39:007][927]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.32.39:013][927]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.233
+[2016.10.26-15.32.39:979][ 42]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.39:979][ 42]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.26-15.32.39:979][ 42]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 27, 2016, 9:32:39 AM)
+[2016.10.26-15.32.39:979][ 42]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.10.26-15.32.39:995][ 42]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015578s)
+[2016.10.26-15.32.39:995][ 42]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.10.26-15.32.39:996][ 42]LogPlayLevel: PIE: World Init took: (0.000720s)
+[2016.10.26-15.32.39:996][ 42]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.016471s)
+[2016.10.26-15.32.40:011][ 42]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.26-15.32.40:017][ 42]LogInit: FAudioDevice initialized.
+[2016.10.26-15.32.40:057][ 42]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.10.26-15.32.40:064][ 42]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.10.27-00.32.40
+[2016.10.26-15.32.40:064][ 42]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.10.26-15.32.40:065][ 42]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.10.26-15.32.40:066][ 42]LogWorld: Bringing up level for play took: 0.006007
+[2016.10.26-15.32.40:066][ 42]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.968
+[2016.10.26-15.32.40:067][ 42]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.46:747][839]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.46:803][839]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.32.46:814][839]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002B2596DCA40
+[2016.10.26-15.32.55:123][828]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (bg_room)
+[2016.10.26-15.32.55:713][898]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (bg_room)
+[2016.10.26-15.32.58:710][256]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (bg_room)
+[2016.10.26-15.32.59:863][365]LogSavePackage: Save=175.752533ms
+[2016.10.26-15.32.59:863][365]LogSavePackage: Moving 'D:/prog/0_myprogram/nekoroom/proj/Saved/ThirdPersonExampleMapA3EB5E484B89AA0B39F7288F46322A26.tmp' to 'D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.10.26-15.32.59:865][365]LogSavePackage: Total save time: 178.436439ms
+[2016.10.26-15.32.59:865][365]LogSavePackage:Display: Finished SavePackage D:/prog/0_myprogram/nekoroom/proj/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.10.26-15.32.59:871][365]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.229
+[2016.10.26-15.33.00:729][467]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.10.26-15.33.00:729][467]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.26-15.33.00:729][467]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 27, 2016, 9:33:00 AM)
+[2016.10.26-15.33.00:729][467]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.10.26-15.33.00:745][467]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016267s)
+[2016.10.26-15.33.00:746][467]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.10.26-15.33.00:746][467]LogPlayLevel: PIE: World Init took: (0.000591s)
+[2016.10.26-15.33.00:746][467]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.017001s)
+[2016.10.26-15.33.00:760][467]LogInit: XAudio2 using 'スピーカー (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.26-15.33.00:767][467]LogInit: FAudioDevice initialized.
+[2016.10.26-15.33.00:796][467]LogWorld: Game cl
