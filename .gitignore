@@ -44,7 +44,7 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
-Binaries/*
+Binaries/
 
 # Builds
 Build/*
